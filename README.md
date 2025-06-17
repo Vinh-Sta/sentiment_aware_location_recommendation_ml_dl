@@ -74,7 +74,9 @@ Hotel B: 500 reviews, 85% positive →  More reliable
 + TF-IDF vectorization (min_df=0.01, max_df=0.9)
 + Train-test split with stratify=y
 
-Example Inference (via Python) : Machine_Learning_training.ipynb
+Example Inference (via Python) : Machine_Learning_training.ipynb 
+
+Save model: support_vector.pkl
 
 # Possible Improvements
 + Multi-class classification: negative, neutral, positive
@@ -91,6 +93,8 @@ Example Inference (via Python) : Machine_Learning_training.ipynb
 Besides traditional models like SVC, Logistic Regression, etc., I experimented with fine-tuning the BERT model to improve sentiment classification accuracy.
 
 Model used: bert-base-uncased (via the Transformers library)
+
+Code: NLP_DEEP_Learning.ipynb 
 
 Fine-tuning techniques:
 
