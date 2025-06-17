@@ -38,6 +38,8 @@ docker run -p 8888:8888 sentiment-app
 
 Then Cick on: http://0.0.0.0.8888, then write 127.0.0.1:8888/docs run
 
+![Screenshot 2025-06-16 132644](https://github.com/user-attachments/assets/713d896a-8233-4376-8995-7eca3d8be836)
+![Screenshot 2025-06-16 132717](https://github.com/user-attachments/assets/769fb155-7475-4287-8fe0-fe400399b2a6)
 
 REST API deployed at 127.0.0.1:8888
 Accepts POST request with text review input
@@ -55,7 +57,7 @@ Returns: {"sentiment": "positive"} or {"sentiment": "negative"}
 > **Final Model Used for Deployment:** `SVC(class_weight='balanced')`
 
 ###  Confusion Matrix
-![alt text](image.png)
+![Alt text](image.png)
 
 + Key Metrics
 Precision-focused to avoid recommending poor hotels
@@ -72,7 +74,7 @@ Hotel B: 500 reviews, 85% positive →  More reliable
 + TF-IDF vectorization (min_df=0.01, max_df=0.9)
 + Train-test split with stratify=y
 
-Example Inference (via Python) : client_test.py
+Example Inference (via Python) : Machine_Learning_training.ipynb
 
 
 Possible Improvements
