@@ -102,12 +102,15 @@ Fine-tuning techniques:
 
 # Training results:
 + Confusion Matrix:
+  
 ![Screenshot 2025-06-16 003134](https://github.com/user-attachments/assets/b070c864-071b-4aed-a706-5deb5fe08e2a)
 
-+ Loss/ Train were recorded and visualized after each epoch
++ Loss/ Train were recorded and visualized after each epoch: 
+  
 ![Screenshot 2025-06-16 000303](https://github.com/user-attachments/assets/ffd9d648-59af-4808-b536-4fe466fdad57)
 
-+ Validation Accuracy
++ Validation Accuracy: 
+  
 ![Screenshot 2025-06-16 000232](https://github.com/user-attachments/assets/c42cc257-54a4-404a-bc74-18588dbda6b5)
 
 
