@@ -59,11 +59,11 @@ Returns: {"sentiment": "positive"} or {"sentiment": "negative"}
 ###  Confusion Matrix
 ![Alt text](image.png)
 
-+ Key Metrics
-Precision-focused to avoid recommending poor hotels
+## Key Metrics
++Precision-focused to avoid recommending poor hotels
 
-Bayesian Average Rating applied to discount low-review-count hotels
-
++ Bayesian Average Rating applied to discount low-review-count hotels
+For example:
 Hotel A: 2 reviews, 100% positive →  Not trustworthy
 
 Hotel B: 500 reviews, 85% positive →  More reliable
@@ -76,8 +76,7 @@ Hotel B: 500 reviews, 85% positive →  More reliable
 
 Example Inference (via Python) : Machine_Learning_training.ipynb
 
-
-Possible Improvements
+# Possible Improvements
 + Multi-class classification: negative, neutral, positive
 
 + Deep learning (LSTM, BERT) for better context
@@ -87,4 +86,30 @@ Possible Improvements
 + Domain-specific embeddings
 
 + Data augmentation for minority class
+
+## Fine-tuning BERT
+Besides traditional models like SVC, Logistic Regression, etc., I experimented with fine-tuning the BERT model to improve sentiment classification accuracy.
+
+Model used: bert-base-uncased (via the Transformers library)
+
+Fine-tuning techniques:
+
++ Tokenization using BertTokenizer
++ Training for up to 10 epochs with early stopping based on validation accuracy
++ Optimizer: AdamW with a fixed learning rate (no scheduler)
++ Output classification layer included in BertForSequenceClassification
++ The CLS token embedding is implicitly used by the classification layer
+
+# Training results:
++ Confusion Matrix:
+![Screenshot 2025-06-16 003134](https://github.com/user-attachments/assets/b070c864-071b-4aed-a706-5deb5fe08e2a)
+
++ Loss/ Train were recorded and visualized after each epoch
+![Screenshot 2025-06-16 000303](https://github.com/user-attachments/assets/ffd9d648-59af-4808-b536-4fe466fdad57)
+
++ Validation Accuracy
+![Screenshot 2025-06-16 000232](https://github.com/user-attachments/assets/c42cc257-54a4-404a-bc74-18588dbda6b5)
+
+
+
 
