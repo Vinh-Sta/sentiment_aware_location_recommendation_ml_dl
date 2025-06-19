@@ -19,7 +19,8 @@ Instead of returning generic links, this system scans hotel reviews, performs se
 - Setup Environment
 
 
-git clone https://github.com/Vinh-Sta/sentiment_aware_location_recommendation_ml_dl.git
+git clone https://github.com/Vinh-Sta/sentiment_aware_location_recommendation_ml_dl.git 
+
 cd sentiment_aware_location_recommendation_ml_dl.git
 
 # (Recommended) Create virtual environment
